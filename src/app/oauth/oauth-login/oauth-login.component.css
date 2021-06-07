@@ -1,0 +1,12 @@
+.main-container{
+    background-color: #883997;
+    padding: 50px;
+    align-content: center;
+    text-align: center;
+}
+
+.main-container button {
+    color: black;
+    background-color: #dbffff;
+    border-width: 0;
+}
