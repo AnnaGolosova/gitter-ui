@@ -9,18 +9,20 @@ import { catchError, retry } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class HttpService {
-  private redirectUrl: string = 'http://localhost:4200/';
-  private clientId: string = '4e27faeb1389fcf73f9eaf02e7ce41878ead65e8';
+  private redirectUrl: string = 'http://localhost:4200/index';
+  private clientId: string = '043930007f83dcbcd47242fb778f7bc00d2b5c52';
   
   constructor(private httpClient: HttpClient) { }
 
   GetAuthCode(): void{
     var url = `https://gitter.im/login/oauth/authorize?response_type=code&redirect_uri=${this.redirectUrl}&client_id=${this.clientId}`;
     var code: object;
-    window.open(url, "_blank", 'height=700,width=700');
+    window.location.href = url;
     // this.httpClient.get(url)
     //   .subscribe((data) => {
     //     code = data;
     //   });
   }
+
+  GetCurrentUser(string code): 
 }
