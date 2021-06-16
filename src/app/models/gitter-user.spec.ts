@@ -1,0 +1,1 @@
+import { GitterUser } from './gitter-user';
